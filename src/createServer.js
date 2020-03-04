@@ -5,7 +5,7 @@ const db = require ('./db')
 
 function createServer() {
     return new GraphQLServer ({
-        typeDefs: 'src/schema.graphql',
+        typeDefs: './src/generated/prisma.graphql',
         resolvers: {
             Mutation,
             Query,

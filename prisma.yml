@@ -4,9 +4,8 @@ datamodel: datamodel.prisma
 
 generate:
   - generator: graphql-schema
-    output: ./src/generated/prisma
-  - generator: javascript-client
-    output: ./src/generated/prisma
+    output: ./src/generated
+  
  
 hooks:
   post-deploy:
